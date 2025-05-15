@@ -18,9 +18,9 @@ export default function decorate(block) {
         alt=""
         width="360"
         height="240"
-        loading="lazy"
+        loading="eager"
         decoding="async"
-        fetchpriority="low"
+      
       />
     </picture>
     <div class="hero-text">
