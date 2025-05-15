@@ -16,6 +16,7 @@ export default function decorate(block) {
         height="600"
         loading="eager"
         decoding="async"
+        fetchpriority="high"
       />
     </picture>
     <div class="hero-text">
