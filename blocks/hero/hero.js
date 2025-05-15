@@ -2,12 +2,16 @@ export default function decorate(block) {
   block.innerHTML = `
     <picture>
       <source 
-        srcset="https://images.unsplash.com/photo-1503264116251-35a269479413?w=600&auto=format&fit=crop"
-        media="(max-width: 480px)"
+        srcset="https://images.unsplash.com/photo-1503264116251-35a269479413?w=480&auto=format&fit=crop"
+        media="(max-width: 599px)"
+        type="image/jpeg">
+      <source 
+        srcset="https://images.unsplash.com/photo-1503264116251-35a269479413?w=800&auto=format&fit=crop"
+        media="(min-width: 600px) and (max-width: 1199px)"
         type="image/jpeg">
       <source 
         srcset="https://images.unsplash.com/photo-1503264116251-35a269479413?w=1200&auto=format&fit=crop"
-        media="(min-width: 601px)"
+        media="(min-width: 1200px)"
         type="image/jpeg">
       <img
         src="https://images.unsplash.com/photo-1503264116251-35a269479413?w=1200&auto=format&fit=crop"
@@ -16,6 +20,7 @@ export default function decorate(block) {
         height="600"
         loading="eager"
         decoding="async"
+        fetchpriority="high"
       />
     </picture>
     <div class="hero-text">
@@ -25,4 +30,3 @@ export default function decorate(block) {
     </div>
   `;
 }
-
