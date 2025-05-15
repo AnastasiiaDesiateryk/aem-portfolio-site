@@ -20,7 +20,7 @@ export default function decorate(block) {
         height="600"
         loading="eager"
         decoding="async"
-        fetchpriority="high"
+        fetchpriority="low"
       />
     </picture>
     <div class="hero-text">
