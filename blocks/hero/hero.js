@@ -3,7 +3,7 @@ export default function decorate(block) {
     <picture>
       <source 
         srcset="https://images.unsplash.com/photo-1503264116251-35a269479413?w=480&auto=format&fit=crop"
-        media="(max-width: 599px)"
+        media="(max-width: 480px)"
         type="image/jpeg">
       <source 
         srcset="https://images.unsplash.com/photo-1503264116251-35a269479413?w=800&auto=format&fit=crop"
