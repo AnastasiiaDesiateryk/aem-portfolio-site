@@ -1,34 +1,53 @@
-# Your Project's Title...
-Your project's description...
+Anastasiia Desiateryk – AEM Portfolio Site
+Overview
+This is a fully responsive portfolio website built with Adobe Experience Manager (AEM) Live as part of a development challenge. It demonstrates how modern web tools and content-driven platforms can be used to build a fast, accessible, and SEO-optimized site — without writing any backend code.
+The site includes:
+* A navigation menu linking to Home, About, and Contact pages
+* A hero section with an optimized background image and clear CTA
+* Integrated Google Analytics (GA4)
+* Clean, maintainable code split into modular blocks (AEM-style)
+* Accessibility and performance best practices
 
-## Environments
-- Preview: https://main--{repo}--{owner}.aem.page/
-- Live: https://main--{repo}--{owner}.aem.live/
+Tech Stack
+* Adobe Experience Manager (AEM Live)
+* Google Docs (for content authoring)
+* GitHub (code versioning)
+* PageSpeed Insights (for performance testing)
+* GA4 (for analytics)
 
-## Documentation
+Key Features
+*    Core Web Vitals (CWV) score on mobile and desktop (PageSpeed)
+* ✅ Responsive image loading with <picture> and srcset
+* ✅ Image size optimized visually via Google Docs + proper srcset behavior
+* ✅ Lightweight and semantic HTML with SEO-focused <meta> tags
+* ✅ Modular AEM blocks (hero, header, footer, etc.)
 
-Before using the aem-boilerplate, we recommand you to go through the documentation on https://www.aem.live/docs/ and more specifically:
-1. [Developer Tutorial](https://www.aem.live/developer/tutorial)
-2. [The Anatomy of a Project](https://www.aem.live/developer/anatomy-of-a-project)
-3. [Web Performance](https://www.aem.live/developer/keeping-it-100)
-4. [Markup, Sections, Blocks, and Auto Blocking](https://www.aem.live/developer/markup-sections-blocks)
+Optimization Strategy
+* Used <source> and sizes in the hero block to load smaller images for mobile users
+* Manually resized the hero background image inside Google Docs (down to ~3 columns wide)
+* Used width, height, loading="eager" and decoding="async" for faster rendering
+* Removed unused preload and fetchpriority after testing their impact
+* Verified speed with Lighthouse: 98–100 score consistently
 
-## Installation
+Google Analytics
+GA4 was integrated using the recommended setup:
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TL5RVPPL..."></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-TL5RVPPL...');
+</script>
 
-```sh
-npm i
-```
+Challenges Faced
+* ⛔ Image preload via Docs metadata was tested but removed for better performance
+* ⛔ Getting full CWV score required balancing: image size, markup cleanliness, and removing unnecessary JS
 
-## Linting
+Live Site
+👉 https://main--aem-portfolio-site--anastasiia.aem.page/
+GitHub Repository
+👉 https://github.com/AnastasiiaDesiateryk/aem-portfolio-site
 
-```sh
-npm run lint
-```
+Author
+Anastasiia Desiateryk Frontend Developer | Passionate about clean UI, performance, and open-s
 
-## Local development
-
-1. Create a new repository based on the `aem-boilerplate` template and add a mountpoint in the `fstab.yaml`
-1. Add the [AEM Code Sync GitHub App](https://github.com/apps/aem-code-sync) to the repository
-1. Install the [AEM CLI](https://github.com/adobe/helix-cli): `npm install -g @adobe/aem-cli`
-1. Start AEM Proxy: `aem up` (opens your browser at `http://localhost:3000`)
-1. Open the `{repo}` directory in your favorite IDE and start coding :)
