@@ -8,7 +8,7 @@ export default function decorate(block) {
         type="image/jpeg">
       <img
         src="https://images.unsplash.com/photo-1503264116251-35a269479413?w=1200&auto=format&fit=crop"
-        alt="Abstract DNA background"
+        alt="Abstractbackground"
         width="1200"
         height="600"
         loading="eager"
