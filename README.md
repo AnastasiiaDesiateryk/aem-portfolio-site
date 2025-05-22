@@ -44,7 +44,7 @@ Challenges Faced
 * ⛔ Getting full CWV score required balancing: image size, markup cleanliness, and removing unnecessary JS
 
 Live Site
-👉 https://main--aem-portfolio-site--anastasiia.aem.page/
+👉 https://main--aem-portfolio-site--anastasiiadesiateryk.aem.live/
 GitHub Repository
 👉 https://github.com/AnastasiiaDesiateryk/aem-portfolio-site
 
